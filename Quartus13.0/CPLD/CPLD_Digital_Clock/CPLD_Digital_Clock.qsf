@@ -49,3 +49,5 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 10
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name BDF_FILE CPLD_Digital_Clock.bdf
+set_global_assignment -name QIP_FILE LPM_Coun.qip

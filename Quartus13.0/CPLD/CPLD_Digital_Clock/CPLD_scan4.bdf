@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -32 256 136 272)
+	(rect -16 256 152 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "pin_name2" (rect 5 0 58 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -211,10 +211,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 136 264)
-	(pt 176 264)
-)
-(connector
 	(pt 416 264)
 	(pt 448 264)
 )
@@ -261,6 +257,10 @@ applicable agreement for further details.
 (connector
 	(pt 280 280)
 	(pt 320 280)
+)
+(connector
+	(pt 176 264)
+	(pt 152 264)
 )
 (junction (pt 304 264))
 (junction (pt 280 280))
