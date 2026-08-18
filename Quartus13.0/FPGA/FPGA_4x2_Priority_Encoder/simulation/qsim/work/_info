@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_4x2_Priority_Encoder\simulation\qsim
+vFPGA_4x2_Priority_Encoder
+Z1 !s100 Ll`c`O?W]mAc9k`PJZK<g1
+Z2 IK6Q_@A9zTghK3ML=9bR6<1
+Z3 VWMNOLC:lfaWd`;IT;<i<D0
+Z4 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_4x2_Priority_Encoder\simulation\qsim
+Z5 w1787069879
+Z6 8FPGA_4x2_Priority_Encoder.vo
+Z7 FFPGA_4x2_Priority_Encoder.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|FPGA_4x2_Priority_Encoder.vo|
+Z10 o-work work -O0
+Z11 n@f@p@g@a_4x2_@priority_@encoder
+!i10b 1
+!s85 0
+Z12 !s108 1787069879.432000
+Z13 !s107 FPGA_4x2_Priority_Encoder.vo|
+!s101 -O0
+vFPGA_4x2_Priority_Encoder_vlg_check_tst
+!i10b 1
+Z14 !s100 gm5Q2AC880e`:hB68R4RD2
+Z15 I:4a8BQWOSPcRQZlzzRRC61
+Z16 Vl>0NZ[EPT4cShYG4Th9YO0
+R4
+Z17 w1787069878
+Z18 8FPGA_4x2_Priority_Encoder.vt
+Z19 FFPGA_4x2_Priority_Encoder.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z20 !s108 1787069879.481000
+Z21 !s107 FPGA_4x2_Priority_Encoder.vt|
+Z22 !s90 -work|work|FPGA_4x2_Priority_Encoder.vt|
+!s101 -O0
+R10
+Z23 n@f@p@g@a_4x2_@priority_@encoder_vlg_check_tst
+vFPGA_4x2_Priority_Encoder_vlg_sample_tst
+!i10b 1
+Z24 !s100 MeL<APQ_`409HVaaiZhD83
+Z25 I>PIDzAJaNJglA89AhAHYS1
+Z26 VcH:cLDZ_=``<kRAj5hZ:K2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@f@p@g@a_4x2_@priority_@encoder_vlg_sample_tst
+vFPGA_4x2_Priority_Encoder_vlg_vec_tst
+!i10b 1
+Z28 !s100 @@OVkVkNlfDL>8mY`Z:VO2
+Z29 IZSHJd4J`:J0mCPD]?AUib1
+Z30 Vl30mEAA1`5jzJ?m^9@=6Z0
+R4
+R17
+R18
+R19
+Z31 L0 185
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@f@p@g@a_4x2_@priority_@encoder_vlg_vec_tst

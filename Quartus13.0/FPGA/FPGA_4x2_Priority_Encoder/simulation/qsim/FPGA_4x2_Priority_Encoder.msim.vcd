@@ -1,0 +1,64 @@
+$comment
+	File created using the following command:
+		vcd file FPGA_4x2_Priority_Encoder.msim.vcd -direction
+$end
+$date
+	Wed Aug 19 00:17:59 2026
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module FPGA_4x2_Priority_Encoder_vlg_vec_tst $end
+$var reg 1 ! K0 $end
+$var reg 1 " K1 $end
+$var reg 1 # K2 $end
+$var reg 1 $ K3 $end
+$var wire 1 % Y0 $end
+$var wire 1 & Y1 $end
+$var wire 1 ' sampler $end
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . K0~input_o $end
+$var wire 1 / Y0~output_o $end
+$var wire 1 0 Y1~output_o $end
+$var wire 1 1 K3~input_o $end
+$var wire 1 2 K1~input_o $end
+$var wire 1 3 inst~combout $end
+$var wire 1 4 K2~input_o $end
+$var wire 1 5 inst1~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+1$
+1%
+1&
+x'
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+1/
+10
+11
+02
+13
+14
+15
+$end
+#1000000
