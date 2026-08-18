@@ -1,0 +1,10 @@
+|Keyboard
+Y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+K3 => inst.IN0
+K3 => inst1.IN0
+K1 => inst.IN1
+Y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+K2 => inst1.IN1
+K0 => ~NO_FANOUT~
+
+
