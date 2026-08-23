@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Downloads\CPLD_mod62\CPLD_mod62\simulation\qsim
+vCPLD_mod62
+Z1 !s100 kIKZ>Z3QJenjnOg`:d74D0
+Z2 I[fL?KFRo4N8EXiY0QDe4l0
+Z3 Vm:lRhegd381VT7h5QEY521
+Z4 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\CPLD\CPLD_mod62\simulation\qsim
+Z5 w1787454688
+Z6 8CPLD_mod62.vo
+Z7 FCPLD_mod62.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|CPLD_mod62.vo|
+Z10 o-work work -O0
+Z11 n@c@p@l@d_mod62
+!i10b 1
+!s85 0
+Z12 !s108 1787454688.591000
+Z13 !s107 CPLD_mod62.vo|
+!s101 -O0
+vCPLD_mod62_vlg_check_tst
+!i10b 1
+Z14 !s100 iFUOnWnfDWUgK>R=0G1ZO3
+Z15 IIfjn=clbVgTAlLAG7Y[n72
+Z16 Vgm4?A[h5ABgKn`QWGN?LE3
+R4
+Z17 w1787454687
+Z18 8CPLD_mod62.vt
+Z19 FCPLD_mod62.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z20 !s108 1787454688.659000
+Z21 !s107 CPLD_mod62.vt|
+Z22 !s90 -work|work|CPLD_mod62.vt|
+!s101 -O0
+R10
+Z23 n@c@p@l@d_mod62_vlg_check_tst
+vCPLD_mod62_vlg_sample_tst
+!i10b 1
+Z24 !s100 oBebYWQl<5j4_jVP:jW]H3
+Z25 I`H?HMzXDhQS1dP=2MhfZk1
+Z26 V9>oTP9I0^=KdkH:=h6[ND0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@c@p@l@d_mod62_vlg_sample_tst
+vCPLD_mod62_vlg_vec_tst
+!i10b 1
+Z28 !s100 @:EJ2Z?>Z=mL8JG5^MGgN2
+Z29 IX6B9l^hbWMY4H2g]`Qa133
+Z30 VkcaVb03n``c<G^U=kV2>^3
+R4
+R17
+R18
+R19
+Z31 L0 341
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@c@p@l@d_mod62_vlg_vec_tst

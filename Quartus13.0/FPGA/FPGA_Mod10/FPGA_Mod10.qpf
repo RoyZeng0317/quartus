@@ -18,13 +18,13 @@
 #
 # Quartus II 32-bit
 # Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-# Date created = 00:14:34  August 19, 2026
+# Date created = 10:36:48  August 23, 2026
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "13.0"
-DATE = "00:14:34  August 19, 2026"
+DATE = "10:36:48  August 23, 2026"
 
 # Revisions
 
-PROJECT_REVISION = "FPGA_4x2_Priority_Encoder"
+PROJECT_REVISION = "FPGA_Mod10"

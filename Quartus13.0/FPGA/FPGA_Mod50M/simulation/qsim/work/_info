@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod50M\simulation\qsim
+vFPGA_Mod50M
+Z1 I`3ZNMaF;O<CD6Y7AE5aD<1
+Z2 VY[ENMz4oBDD0nS]13OGa52
+Z3 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod50M\simulation\qsim
+Z4 w1787261749
+Z5 8FPGA_Mod50M.vo
+Z6 FFPGA_Mod50M.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|FPGA_Mod50M.vo|
+Z9 o-work work -O0
+Z10 n@f@p@g@a_@mod50@m
+!i10b 1
+Z11 !s100 9^8aEbzBDCBhHQ^BnD4=U3
+!s85 0
+Z12 !s108 1787261749.719000
+Z13 !s107 FPGA_Mod50M.vo|
+!s101 -O0
+vFPGA_Mod50M_vlg_sample_tst
+!i10b 1
+Z14 !s100 b4:GGUQL=P^NP?RIYV5aN3
+Z15 IbIUYWnJb;gGCVM<3fNWU42
+Z16 V?nQ@WEW5YdefEnh5^GFdC3
+R3
+w1787261748
+Z17 8FPGA_Mod50M.vt
+Z18 FFPGA_Mod50M.vt
+L0 29
+R7
+r1
+!s85 0
+31
+!s108 1787261749.790000
+!s107 FPGA_Mod50M.vt|
+Z19 !s90 -work|work|FPGA_Mod50M.vt|
+!s101 -O0
+R9
+Z20 n@f@p@g@a_@mod50@m_vlg_sample_tst

@@ -1,0 +1,7 @@
+# Quartus 執行期鎖定檔（另一支正在跑的 quartus.exe 行程持有，無法被 git 讀取）
+*.flock
+
+# Quartus 編譯產生的暫存資料庫，屬於建置產物，非原始檔
+db/
+incremental_db/
+greybox_tmp/
