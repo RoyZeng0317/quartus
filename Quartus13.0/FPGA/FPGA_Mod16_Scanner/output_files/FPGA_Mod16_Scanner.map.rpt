@@ -1,6 +1,6 @@
 Analysis & Synthesis report for FPGA_Mod16_Scanner
-Sun Aug 23 09:41:01 2026
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sun Aug 23 12:24:53 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -13,13 +13,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: 74161:inst1
- 12. Parameter Settings for User Entity Instance: 74161:inst2
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +41,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 23 09:41:01 2026           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 23 12:24:53 2026           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; FPGA_Mod16_Scanner                              ;
 ; Top-level Entity Name              ; FPGA_Mod16_Scanner                              ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
+; Total logic elements               ; 10                                              ;
+;     Total combinational functions  ; 10                                              ;
+;     Dedicated logic registers      ; 5                                               ;
+; Total registers                    ; 5                                               ;
 ; Total pins                         ; 9                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -163,19 +159,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; FPGA_Mod16_Scanner.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod16_Scanner/FPGA_Mod16_Scanner.bdf ;         ;
-; 74161.tdf                        ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74161.tdf                                    ;         ;
-; aglobal.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal.inc                                    ;         ;
-; f74161.bdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/f74161.bdf                                   ;         ;
-; fpga_mod50m.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod16_Scanner/fpga_mod50m.bdf        ;         ;
-; fpga_mod10m.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod16_Scanner/fpga_mod10m.bdf        ;         ;
-; 7490.bdf                         ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/7490.bdf                                     ;         ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; FPGA_Mod16_Scanner.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod16_Scanner/FPGA_Mod16_Scanner.bdf ;         ;
+; 74138.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74138.bdf                                    ;         ;
+; 7490.bdf                         ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/7490.bdf                                     ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -185,408 +177,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; I/O pins                 ; 9                ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; Q1~output        ;
-; Maximum fan-out          ; 1                ;
-; Total fan-out            ; 9                ;
-; Average fan-out          ; 0.50             ;
+; Maximum fan-out node     ; 7490:inst1|14    ;
+; Maximum fan-out          ; 7                ;
+; Total fan-out            ; 47               ;
+; Average fan-out          ; 1.42             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |FPGA_Mod16_Scanner        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |FPGA_Mod16_Scanner ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; |FPGA_Mod16_Scanner        ; 10 (1)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |FPGA_Mod16_Scanner             ; work         ;
+;    |74138:inst5|           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod16_Scanner|74138:inst5 ; work         ;
+;    |7490:inst1|            ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod16_Scanner|7490:inst1  ; work         ;
+;    |7490:inst2|            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod16_Scanner|7490:inst2  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                         ;
-+---------------------------------------------------+----------------------------------------+
-; Register name                                     ; Reason for Removal                     ;
-+---------------------------------------------------+----------------------------------------+
-; 74161:inst1|f74161:sub|9                          ; Stuck at GND due to stuck port data_in ;
-; 74161:inst1|f74161:sub|87                         ; Stuck at GND due to stuck port data_in ;
-; 74161:inst1|f74161:sub|110                        ; Stuck at GND due to stuck port data_in ;
-; 74161:inst1|f74161:sub|99                         ; Stuck at GND due to stuck port data_in ;
-; 74161:inst2|f74161:sub|9                          ; Stuck at GND due to stuck port clear   ;
-; 74161:inst2|f74161:sub|87                         ; Stuck at GND due to stuck port clear   ;
-; 74161:inst2|f74161:sub|99                         ; Stuck at GND due to stuck port clear   ;
-; 74161:inst2|f74161:sub|110                        ; Stuck at GND due to stuck port clear   ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|19 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|11 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|14 ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|7  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|19  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|11  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|14  ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|7   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|19   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|11   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|14   ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|7    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|19    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|11    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|14    ; Lost fanout                            ;
-; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|7     ; Lost fanout                            ;
-; Total Number of Removed Registers = 188           ;                                        ;
-+---------------------------------------------------+----------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                               ;
-+----------------------------+---------------------------+----------------------------------------------------------------------------------+
-; Register name              ; Reason for Removal        ; Registers Removed due to This Register                                           ;
-+----------------------------+---------------------------+----------------------------------------------------------------------------------+
-; 74161:inst1|f74161:sub|9   ; Stuck at GND              ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|19,                               ;
-;                            ; due to stuck port data_in ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst14|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst12|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst10|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst8|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst6|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst4|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst2|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst16|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst14|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst12|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst10|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst8|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst6|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst4|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst2|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst3|7490:inst|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst16|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst14|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst12|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst10|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst8|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst6|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst4|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst2|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst2|7490:inst|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst16|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst14|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst12|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|19,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|11,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|14,                               ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst10|7,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst8|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst6|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst4|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst2|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst1|7490:inst|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst16|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst14|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst12|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|19,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|11,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|14,                                ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst10|7,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst8|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst6|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst4|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|19,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|11,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|14,                                 ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst2|7,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|19,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|11,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|14,                                  ;
-;                            ;                           ; FPGA_Mod50M:inst|FPGA_Mod10M:inst|7490:inst|7                                    ;
-; 74161:inst1|f74161:sub|110 ; Stuck at GND              ; 74161:inst2|f74161:sub|87, 74161:inst2|f74161:sub|99, 74161:inst2|f74161:sub|110 ;
-;                            ; due to stuck port data_in ;                                                                                  ;
-+----------------------------+---------------------------+----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -594,42 +202,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: 74161:inst1 ;
-+------------------------+---------------+-----------------+
-; Parameter Name         ; Value         ; Type            ;
-+------------------------+---------------+-----------------+
-; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped         ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY      ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY    ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE    ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE  ;
-+------------------------+---------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: 74161:inst2 ;
-+------------------------+---------------+-----------------+
-; Parameter Name         ; Value         ; Type            ;
-+------------------------+---------------+-----------------+
-; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped         ;
-; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY      ;
-; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY    ;
-; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE    ;
-; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE  ;
-+------------------------+---------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -645,49 +225,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Aug 23 09:41:01 2026
+    Info: Processing started: Sun Aug 23 12:24:52 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_Mod16_Scanner -c FPGA_Mod16_Scanner
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file fpga_mod16_scanner.bdf
     Info (12023): Found entity 1: FPGA_Mod16_Scanner
 Info (12127): Elaborating entity "FPGA_Mod16_Scanner" for the top level hierarchy
-Info (12128): Elaborating entity "74161" for hierarchy "74161:inst1"
-Info (12130): Elaborated megafunction instantiation "74161:inst1"
-Info (12128): Elaborating entity "f74161" for hierarchy "74161:inst1|f74161:sub"
-Info (12131): Elaborated megafunction instantiation "74161:inst1|f74161:sub", which is child of megafunction instantiation "74161:inst1"
-Warning (12125): Using design file fpga_mod50m.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: FPGA_Mod50M
-Info (12128): Elaborating entity "FPGA_Mod50M" for hierarchy "FPGA_Mod50M:inst"
-Warning (12125): Using design file fpga_mod10m.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: FPGA_Mod10M
-Info (12128): Elaborating entity "FPGA_Mod10M" for hierarchy "FPGA_Mod50M:inst|FPGA_Mod10M:inst4"
-Info (12128): Elaborating entity "7490" for hierarchy "FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16"
-Info (12130): Elaborated megafunction instantiation "FPGA_Mod50M:inst|FPGA_Mod10M:inst4|7490:inst16"
-Info (13014): Ignored 6 buffer(s)
-    Info (13015): Ignored 6 CARRY buffer(s)
+Info (12128): Elaborating entity "74138" for hierarchy "74138:inst5"
+Info (12130): Elaborated megafunction instantiation "74138:inst5"
+Info (12128): Elaborating entity "7490" for hierarchy "7490:inst1"
+Info (12130): Elaborated megafunction instantiation "7490:inst1"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Q1" is stuck at GND
-    Warning (13410): Pin "Q2" is stuck at GND
-    Warning (13410): Pin "Q4" is stuck at GND
-    Warning (13410): Pin "Q3" is stuck at GND
-    Warning (13410): Pin "Q5" is stuck at GND
-    Warning (13410): Pin "Q6" is stuck at GND
-    Warning (13410): Pin "Q7" is stuck at GND
-    Warning (13410): Pin "Q8" is stuck at GND
-Info (17049): 180 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "Y4" is stuck at VCC
+    Warning (13410): Pin "Y5" is stuck at VCC
+    Warning (13410): Pin "Y6" is stuck at VCC
+    Warning (13410): Pin "Y7" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK"
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 8 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 400 megabytes
-    Info: Processing ended: Sun Aug 23 09:41:01 2026
-    Info: Elapsed time: 00:00:00
+    Info (21061): Implemented 10 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4634 megabytes
+    Info: Processing ended: Sun Aug 23 12:24:53 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

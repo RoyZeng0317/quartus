@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod16_Scanner\simulation\qsim
+vFPGA_Mod16_Scanner
+Z1 I5fl1LkbQHgS@C8PBhH9[U3
+Z2 V[eF<gLYiA^J;gH>z3Z3]F0
+Z3 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod16_Scanner\simulation\qsim
+Z4 w1787459127
+Z5 8FPGA_Mod16_Scanner.vo
+Z6 FFPGA_Mod16_Scanner.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|FPGA_Mod16_Scanner.vo|
+Z9 o-work work -O0
+Z10 n@f@p@g@a_@mod16_@scanner
+!i10b 1
+Z11 !s100 Zcb[BzVO8@<ZYPNZN>ceU1
+!s85 0
+Z12 !s108 1787459127.711000
+Z13 !s107 FPGA_Mod16_Scanner.vo|
+!s101 -O0
+vFPGA_Mod16_Scanner_vlg_check_tst
+!i10b 1
+!s100 JWUYRBBbdfL?_j<VXZaJ<0
+I5Sz7eB09:^6G44jdI7JB23
+Va3D==@83?O=o:[`?P1JQC1
+R3
+Z14 w1787459126
+Z15 8FPGA_Mod16_Scanner.vt
+Z16 FFPGA_Mod16_Scanner.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1787459127.756000
+Z18 !s107 FPGA_Mod16_Scanner.vt|
+Z19 !s90 -work|work|FPGA_Mod16_Scanner.vt|
+!s101 -O0
+R9
+Z20 n@f@p@g@a_@mod16_@scanner_vlg_check_tst
+vFPGA_Mod16_Scanner_vlg_sample_tst
+!i10b 1
+Z21 !s100 bF_eLKT?V@oF05iP<_bTS2
+Z22 IPcTmdL>U8zXD:=eX4D2=P2
+Z23 VIk]2CXUio7R;O0He<U43;0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z24 n@f@p@g@a_@mod16_@scanner_vlg_sample_tst
+vFPGA_Mod16_Scanner_vlg_vec_tst
+!i10b 1
+!s100 jzZd_kH[JA_`4MCX;4`]<3
+I6CThC[ANPZ6D=k10>cek[1
+Z25 VOWNX0nWO4[1c_azhP5mbF3
+R3
+R14
+R15
+R16
+L0 341
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z26 n@f@p@g@a_@mod16_@scanner_vlg_vec_tst

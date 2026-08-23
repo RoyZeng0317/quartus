@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod16\simulation\qsim
+vFPGA_Mod16
+Z1 !s100 ZnOc?LK9YN^KY6=3cZbPi0
+Z2 I`gCS@3eo5KgF7Hg>`ZWo>3
+Z3 VOC@=eAS[7iP`Ua?LXUFE]2
+Z4 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod16\simulation\qsim
+Z5 w1787459648
+Z6 8FPGA_Mod16.vo
+Z7 FFPGA_Mod16.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|FPGA_Mod16.vo|
+Z10 o-work work -O0
+Z11 n@f@p@g@a_@mod16
+!i10b 1
+!s85 0
+Z12 !s108 1787459648.790000
+Z13 !s107 FPGA_Mod16.vo|
+!s101 -O0
+vFPGA_Mod16_vlg_check_tst
+!i10b 1
+Z14 !s100 L1eBB7GSD1CELVaz2fdd83
+Z15 I[zaOj;<:PO9cClC=GmljK1
+Z16 VNEBci9fXaoNBd5XDg`OC:1
+R4
+R5
+Z17 8FPGA_Mod16.vt
+Z18 FFPGA_Mod16.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z19 !s108 1787459648.857000
+Z20 !s107 FPGA_Mod16.vt|
+Z21 !s90 -work|work|FPGA_Mod16.vt|
+!s101 -O0
+R10
+Z22 n@f@p@g@a_@mod16_vlg_check_tst
+vFPGA_Mod16_vlg_sample_tst
+!i10b 1
+Z23 !s100 GiLZ<l]^H_iaE4`_1z;4e0
+Z24 I7j6Ci6bVR[LYC_<[k0<iT0
+Z25 VD_9KPikP0<=e=:D92e=8`3
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@f@p@g@a_@mod16_vlg_sample_tst
+vFPGA_Mod16_vlg_vec_tst
+!i10b 1
+Z27 !s100 PA]G3XDPDV5h9g<KL6:VY2
+Z28 I0DLVUNKQ0]UKQQ60YePLj3
+Z29 VLe_U3UX1Cm]=YcIK0>Bg^3
+R4
+R5
+R17
+R18
+Z30 L0 341
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z31 n@f@p@g@a_@mod16_vlg_vec_tst

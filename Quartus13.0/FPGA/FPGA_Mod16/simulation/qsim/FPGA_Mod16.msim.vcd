@@ -1,0 +1,472 @@
+$comment
+	File created using the following command:
+		vcd file FPGA_Mod16.msim.vcd -direction
+$end
+$date
+	Sun Aug 23 12:34:09 2026
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module FPGA_Mod16_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var wire 1 " Q1 $end
+$var wire 1 # Q2 $end
+$var wire 1 $ Q3 $end
+$var wire 1 % Q4 $end
+$var wire 1 & Q5 $end
+$var wire 1 ' Q6 $end
+$var wire 1 ( Q7 $end
+$var wire 1 ) Q8 $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 inst1|7~clkctrl_outclk $end
+$var wire 1 2 Q1~output_o $end
+$var wire 1 3 Q2~output_o $end
+$var wire 1 4 Q3~output_o $end
+$var wire 1 5 Q4~output_o $end
+$var wire 1 6 Q5~output_o $end
+$var wire 1 7 Q6~output_o $end
+$var wire 1 8 Q7~output_o $end
+$var wire 1 9 Q8~output_o $end
+$var wire 1 : CLK~input_o $end
+$var wire 1 ; inst1|7~0_combout $end
+$var wire 1 < inst1|7~feeder_combout $end
+$var wire 1 = inst1|30~0_combout $end
+$var wire 1 > inst1|19~q $end
+$var wire 1 ? inst1|31~combout $end
+$var wire 1 @ inst1|11~feeder_combout $end
+$var wire 1 A inst1|11~q $end
+$var wire 1 B inst1|14~0_combout $end
+$var wire 1 C inst1|14~q $end
+$var wire 1 D inst2|7~0_combout $end
+$var wire 1 E inst2|7~feeder_combout $end
+$var wire 1 F inst2|7~q $end
+$var wire 1 G inst~combout $end
+$var wire 1 H inst1|7~q $end
+$var wire 1 I inst2|7~clkctrl_outclk $end
+$var wire 1 J inst2|14~0_combout $end
+$var wire 1 K inst2|14~q $end
+$var wire 1 L inst2|30~combout $end
+$var wire 1 M inst2|19~q $end
+$var wire 1 N inst2|31~combout $end
+$var wire 1 O inst2|11~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+1;
+1<
+0=
+0>
+1?
+1@
+0A
+0B
+0C
+1D
+1E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+$end
+#500000
+1!
+1:
+0*
+#1000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#1500000
+1!
+1:
+0*
+#2000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+1A
+1B
+0?
+13
+1#
+0@
+#2500000
+1!
+1:
+0*
+#3000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#3500000
+1!
+1:
+0*
+#4000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+0A
+1C
+1?
+03
+14
+0#
+1$
+1@
+#4500000
+1!
+1:
+0*
+#5000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#5500000
+1!
+1:
+0*
+#6000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+1A
+0B
+0?
+1=
+13
+1#
+0@
+#6500000
+1!
+1:
+0*
+#7000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#7500000
+1!
+1:
+0*
+#8000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+1>
+0A
+0C
+0=
+15
+03
+04
+1%
+0#
+0$
+#8500000
+1!
+1:
+0*
+#9000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#9500000
+1!
+1:
+0*
+#10000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+0>
+1?
+05
+0%
+1@
+1F
+1I
+0D
+16
+1&
+0E
+#10500000
+1!
+1:
+0*
+#11000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#11500000
+1!
+1:
+0*
+#12000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+1A
+1B
+0?
+13
+1#
+0@
+#12500000
+1!
+1:
+0*
+#13000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#13500000
+1!
+1:
+0*
+#14000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+0A
+1C
+1?
+03
+14
+0#
+1$
+1@
+#14500000
+1!
+1:
+0*
+#15000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#15500000
+1!
+1:
+0*
+#16000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+1A
+1G
+0B
+0?
+1=
+13
+1#
+0@
+0A
+0C
+0F
+0I
+0G
+1?
+0=
+1D
+03
+04
+06
+0#
+0$
+0&
+1@
+1E
+#16500000
+1!
+1:
+0*
+#17000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#17500000
+1!
+1:
+0*
+#18000000
+0!
+0:
+1*
+0H
+01
+1;
+02
+0"
+1<
+1A
+1B
+0?
+13
+1#
+0@
+#18500000
+1!
+1:
+0*
+#19000000
+0!
+0:
+1*
+1H
+11
+0;
+12
+1"
+0<
+#19500000
+1!
+1:
+0*
+#20000000
