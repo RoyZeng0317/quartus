@@ -1,0 +1,10 @@
+Fitter Status : Successful - Wed Nov 15 11:07:19 2023
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : CPLD_mux_4x2x4
+Top-level Entity Name : CPLD_mux_4x2x4
+Family : FLEX10K
+Device : EPF10K10TC144-4
+Timing Models : Final
+Total logic elements : 4 / 576 ( < 1 % )
+Total pins : 13 / 102 ( 13 % )
+Total memory bits : 0 / 6,144 ( 0 % )

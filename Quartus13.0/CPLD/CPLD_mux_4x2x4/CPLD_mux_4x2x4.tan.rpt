@@ -1,0 +1,115 @@
+Classic Timing Analyzer report for CPLD_mux_4x2x4
+Wed Nov 15 11:07:21 2023
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. tpd
+  5. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                               ;
++------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 15.400 ns   ; A2   ; Y2 ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;    ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                      ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                         ; Setting            ; From ; To ; Entity Name ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                    ; EPF10K10TC144-4    ;      ;    ;             ;
+; Timing Models                                                  ; Final              ;      ;    ;             ;
+; Default hold multicycle                                        ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                      ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                         ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                 ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                               ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                          ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                        ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                               ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                           ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                  ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node          ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                          ; 10                 ;      ;    ;             ;
+; Number of paths to report                                      ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                   ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                         ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                     ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                   ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis ; Off                ;      ;    ;             ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++---------------------------------------------------------+
+; tpd                                                     ;
++-------+-------------------+-----------------+------+----+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To ;
++-------+-------------------+-----------------+------+----+
+; N/A   ; None              ; 15.400 ns       ; B3   ; Y3 ;
+; N/A   ; None              ; 15.400 ns       ; A2   ; Y2 ;
+; N/A   ; None              ; 15.100 ns       ; A3   ; Y3 ;
+; N/A   ; None              ; 14.100 ns       ; B1   ; Y1 ;
+; N/A   ; None              ; 14.100 ns       ; A1   ; Y1 ;
+; N/A   ; None              ; 13.800 ns       ; Sel  ; Y1 ;
+; N/A   ; None              ; 13.400 ns       ; B2   ; Y2 ;
+; N/A   ; None              ; 13.400 ns       ; B0   ; Y0 ;
+; N/A   ; None              ; 13.400 ns       ; A0   ; Y0 ;
+; N/A   ; None              ; 13.000 ns       ; Sel  ; Y3 ;
+; N/A   ; None              ; 13.000 ns       ; Sel  ; Y2 ;
+; N/A   ; None              ; 13.000 ns       ; Sel  ; Y0 ;
++-------+-------------------+-----------------+------+----+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Wed Nov 15 11:07:21 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off CPLD_mux_4x2x4 -c CPLD_mux_4x2x4
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Info: Longest tpd from source pin "B3" to destination pin "Y3" is 15.400 ns
+    Info: 1: + IC(0.000 ns) + CELL(3.500 ns) = 3.500 ns; Loc. = PIN_17; Fanout = 1; PIN Node = 'B3'
+    Info: 2: + IC(2.900 ns) + CELL(2.300 ns) = 8.700 ns; Loc. = LC8_B3; Fanout = 1; COMB Node = 'CPLD_mux_1x2x1:inst5|inst5~4'
+    Info: 3: + IC(1.600 ns) + CELL(5.100 ns) = 15.400 ns; Loc. = PIN_86; Fanout = 0; PIN Node = 'Y3'
+    Info: Total cell delay = 10.900 ns ( 70.78 % )
+    Info: Total interconnect delay = 4.500 ns ( 29.22 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Allocated 171 megabytes of memory during processing
+    Info: Processing ended: Wed Nov 15 11:07:21 2023
+    Info: Elapsed time: 00:00:00
+
+

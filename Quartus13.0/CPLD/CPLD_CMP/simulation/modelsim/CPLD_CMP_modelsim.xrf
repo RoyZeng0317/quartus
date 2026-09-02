@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/CPLD/CPLD_CMP/CPLD_CMP.bdf
+source_file = 1, C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/CPLD/CPLD_CMP/Waveform.vwf
+source_file = 1, C:/Users/Roy/Documents/GitHub/quartus/Quartus13.0/CPLD/CPLD_CMP/db/CPLD_CMP.cbx.xml
+design_name = CPLD_CMP
+instance = comp, \E~output , E~output, CPLD_CMP, 1
+instance = comp, \G~output , G~output, CPLD_CMP, 1
+instance = comp, \L~output , L~output, CPLD_CMP, 1
+instance = comp, \En~input , En~input, CPLD_CMP, 1
+instance = comp, \B~input , B~input, CPLD_CMP, 1
+instance = comp, \A~input , A~input, CPLD_CMP, 1
+instance = comp, \inst6~0 , inst6~0, CPLD_CMP, 1

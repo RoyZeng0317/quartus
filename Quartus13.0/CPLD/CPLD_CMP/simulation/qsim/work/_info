@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\CPLD\CPLD_CMP\simulation\qsim
+vCPLD_CMP
+Z1 !s100 Eg3d3<091RWh`Rl]2SXnk3
+Z2 IQTa?9_fE[;RQ<RC][d6Q^3
+Z3 VS3DHK630Z:K]>fM6M?dhX2
+Z4 dC:\Users\Roy\Documents\GitHub\quartus\Quartus13.0\CPLD\CPLD_CMP\simulation\qsim
+Z5 w1787613979
+Z6 8CPLD_CMP.vo
+Z7 FCPLD_CMP.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|CPLD_CMP.vo|
+Z10 o-work work -O0
+Z11 n@c@p@l@d_@c@m@p
+!i10b 1
+!s85 0
+Z12 !s108 1787613980.044000
+Z13 !s107 CPLD_CMP.vo|
+!s101 -O0
+vCPLD_CMP_vlg_check_tst
+!i10b 1
+Z14 !s100 Eb7RGgbH<<K:d6lOF9>K?3
+Z15 IC7HB]U@1i9f[?:ln3UH<T0
+Z16 VR4LE@@G>l9`:HVKNE_c361
+R4
+R5
+Z17 8CPLD_CMP.vt
+Z18 FCPLD_CMP.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1787613980.095000
+Z20 !s107 CPLD_CMP.vt|
+Z21 !s90 -work|work|CPLD_CMP.vt|
+!s101 -O0
+R10
+Z22 n@c@p@l@d_@c@m@p_vlg_check_tst
+vCPLD_CMP_vlg_sample_tst
+!i10b 1
+Z23 !s100 IKlO@J76AAlFnm=J>gSG70
+Z24 IAY;V1[=in[A8_oWSkZ^ze3
+Z25 V0?@4mUdUDe^Cd<e:3]Ue@2
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@c@p@l@d_@c@m@p_vlg_sample_tst
+vCPLD_CMP_vlg_vec_tst
+!i10b 1
+!s100 bAz6L;oHR1WmKj9jf_WMU0
+Ic0LA[Hm:aiO8TA[FeP3kV2
+Z27 VNCfmPY7L9PWAig`PCiVAi3
+R4
+R5
+R17
+R18
+Z28 L0 210
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@c@p@l@d_@c@m@p_vlg_vec_tst
