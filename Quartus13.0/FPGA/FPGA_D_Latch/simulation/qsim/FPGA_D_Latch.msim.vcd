@@ -1,0 +1,56 @@
+$comment
+	File created using the following command:
+		vcd file FPGA_D_Latch.msim.vcd -direction
+$end
+$date
+	Mon Nov 16 18:57:01 2026
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module FPGA_D_Latch_vlg_vec_tst $end
+$var reg 1 ! D $end
+$var reg 1 " En $end
+$var wire 1 # Q $end
+$var wire 1 $ Q0 $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , Q0~output_o $end
+$var wire 1 - Q~output_o $end
+$var wire 1 . D~input_o $end
+$var wire 1 / En~input_o $end
+$var wire 1 0 inst4~1_combout $end
+$var wire 1 1 inst3~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+1$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+0-
+0.
+1/
+00
+01
+$end
+#1000000

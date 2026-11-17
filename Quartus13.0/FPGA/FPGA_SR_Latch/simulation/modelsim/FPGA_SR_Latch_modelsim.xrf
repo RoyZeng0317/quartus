@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_SR_Latch/FPGA_SR_Latch.bdf
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_SR_Latch/Waveform.vwf
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_SR_Latch/FPGA_SR_Clock_Latch.bdf
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_SR_Latch/db/FPGA_SR_Latch.cbx.xml
+design_name = FPGA_SR_Latch
+instance = comp, \Q~output , Q~output, FPGA_SR_Latch, 1
+instance = comp, \Q0~output , Q0~output, FPGA_SR_Latch, 1
+instance = comp, \R~input , R~input, FPGA_SR_Latch, 1
+instance = comp, \S~input , S~input, FPGA_SR_Latch, 1

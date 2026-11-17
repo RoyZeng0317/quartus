@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_D_Clock_Latch/Waveform.vwf
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_D_Clock_Latch/fpga_d_clock_latch.bdf
+source_file = 1, D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_D_Clock_Latch/db/FPGA_D_Clock_Latch.cbx.xml
+design_name = FPGA_D_Clock_Latch
+instance = comp, \Q0~output , Q0~output, FPGA_D_Clock_Latch, 1
+instance = comp, \Q~output , Q~output, FPGA_D_Clock_Latch, 1
+instance = comp, \D~input , D~input, FPGA_D_Clock_Latch, 1
+instance = comp, \CK~input , CK~input, FPGA_D_Clock_Latch, 1
+instance = comp, \inst4~1 , inst4~1, FPGA_D_Clock_Latch, 1

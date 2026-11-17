@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\GitHub\quartus\Quartus13.0\FPGA\FPGA_D_Clock_Latch\simulation\qsim
+vFPGA_D_Clock_Latch
+Z1 Ih>1kYgdlzD@d[X9Q>W;f=3
+Z2 V<[BBLlEi:>T40a04S^]<A1
+Z3 dD:\GitHub\quartus\Quartus13.0\FPGA\FPGA_D_Clock_Latch\simulation\qsim
+Z4 w1794828898
+Z5 8FPGA_D_Clock_Latch.vo
+Z6 FFPGA_D_Clock_Latch.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@f@p@g@a_@d_@clock_@latch
+!i10b 1
+Z10 !s100 9zjo8<=5a;6K5iBfV?ozi2
+!s85 0
+Z11 !s108 1794828899.295000
+Z12 !s107 FPGA_D_Clock_Latch.vo|
+Z13 !s90 -work|work|FPGA_D_Clock_Latch.vo|
+!s101 -O0
+vFPGA_D_Clock_Latch_vlg_check_tst
+!i10b 1
+!s100 c_0bZK^cJaU:Ri7i=]LhF2
+I_U<WLmeMATS>H3^?Qo2<j0
+Vh:h_V@f<GJb^`blMz@Abn0
+R3
+R4
+Z14 8FPGA_D_Clock_Latch.vt
+Z15 FFPGA_D_Clock_Latch.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1794828899.403000
+Z17 !s107 FPGA_D_Clock_Latch.vt|
+Z18 !s90 -work|work|FPGA_D_Clock_Latch.vt|
+!s101 -O0
+R8
+n@f@p@g@a_@d_@clock_@latch_vlg_check_tst
+vFPGA_D_Clock_Latch_vlg_sample_tst
+!i10b 1
+!s100 Z]Mj8ZUXWhe1fRCLTQLD`2
+ID]T`KKhdk>89a7RAZocIi1
+V6iYFMmF4XP0KCGJP3K:C40
+R3
+R4
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@f@p@g@a_@d_@clock_@latch_vlg_sample_tst
+vFPGA_D_Clock_Latch_vlg_vec_tst
+!i10b 1
+!s100 2clj6Zl@?AH3PPI^TPS6[2
+I7MDB0g7nKR>dUgg1]dbM01
+V:ChXf:1L3R:>]Akhg9>Ph2
+R3
+R4
+R14
+R15
+L0 181
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@f@p@g@a_@d_@clock_@latch_vlg_vec_tst
