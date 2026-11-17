@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA_Mod4k
-Tue Nov 17 17:11:58 2026
+Tue Nov 17 17:56:16 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,15 +41,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 17 17:11:58 2026           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 17 17:56:16 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; FPGA_Mod4k                                      ;
 ; Top-level Entity Name              ; FPGA_Mod4k                                      ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 48                                              ;
-;     Total combinational functions  ; 48                                              ;
-;     Dedicated logic registers      ; 48                                              ;
-; Total registers                    ; 48                                              ;
+; Total logic elements               ; 17                                              ;
+;     Total combinational functions  ; 17                                              ;
+;     Dedicated logic registers      ; 16                                              ;
+; Total registers                    ; 16                                              ;
 ; Total pins                         ; 2                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -165,48 +165,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                 ; Library ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+---------+
 ; FPGA_Mod4k.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod4k/FPGA_Mod4k.bdf ;         ;
-; fpga_mod1k.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod4k/fpga_mod1k.bdf ;         ;
+; fpga_mod4.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod4k/fpga_mod4.bdf  ;         ;
 ; 7490.bdf                         ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/7490.bdf ;         ;
+; fpga_mod1k.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod4k/fpga_mod1k.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+--------------------------+-------------------------------+
-; Resource                 ; Usage                         ;
-+--------------------------+-------------------------------+
-; I/O pins                 ; 2                             ;
-; DSP block 9-bit elements ; 0                             ;
-; Maximum fan-out node     ; FPGA_Mod1k:inst3|7490:inst4|7 ;
-; Maximum fan-out          ; 4                             ;
-; Total fan-out            ; 183                           ;
-; Average fan-out          ; 1.83                          ;
-+--------------------------+-------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++--------------------------+------------------------------+
+; Resource                 ; Usage                        ;
++--------------------------+------------------------------+
+; I/O pins                 ; 2                            ;
+; DSP block 9-bit elements ; 0                            ;
+; Maximum fan-out node     ; FPGA_Mod4:inst1|7490:inst2|7 ;
+; Maximum fan-out          ; 5                            ;
+; Total fan-out            ; 69                           ;
+; Average fan-out          ; 1.86                         ;
++--------------------------+------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
-; |FPGA_Mod4k                ; 48 (0)            ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 2    ; 0            ; |FPGA_Mod4k                             ; work         ;
-;    |FPGA_Mod1k:inst1|      ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst1            ; work         ;
-;       |7490:inst2|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst1|7490:inst2 ; work         ;
-;       |7490:inst4|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst1|7490:inst4 ; work         ;
-;       |7490:inst|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst1|7490:inst  ; work         ;
-;    |FPGA_Mod1k:inst2|      ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst2            ; work         ;
-;       |7490:inst2|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst2|7490:inst2 ; work         ;
-;       |7490:inst4|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst2|7490:inst4 ; work         ;
-;       |7490:inst|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst2|7490:inst  ; work         ;
-;    |FPGA_Mod1k:inst3|      ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst3            ; work         ;
-;       |7490:inst2|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst3|7490:inst2 ; work         ;
-;       |7490:inst4|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst3|7490:inst4 ; work         ;
-;       |7490:inst|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst3|7490:inst  ; work         ;
-;    |FPGA_Mod1k:inst|       ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst             ; work         ;
-;       |7490:inst2|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst|7490:inst2  ; work         ;
-;       |7490:inst4|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst|7490:inst4  ; work         ;
-;       |7490:inst|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst|7490:inst   ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------+--------------+
+; |FPGA_Mod4k                ; 17 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 2    ; 0            ; |FPGA_Mod4k                            ; work         ;
+;    |FPGA_Mod1k:inst|       ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst            ; work         ;
+;       |7490:inst2|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst|7490:inst2 ; work         ;
+;       |7490:inst4|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst|7490:inst4 ; work         ;
+;       |7490:inst|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod1k:inst|7490:inst  ; work         ;
+;    |FPGA_Mod4:inst1|       ; 5 (1)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod4:inst1            ; work         ;
+;       |7490:inst2|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |FPGA_Mod4k|FPGA_Mod4:inst1|7490:inst2 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -215,10 +206,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 48    ;
+; Total registers                              ; 16    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -240,28 +231,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 17 17:11:56 2026
+    Info: Processing started: Tue Nov 17 17:56:15 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_Mod4k -c FPGA_Mod4k
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file fpga_mod4k.bdf
     Info (12023): Found entity 1: FPGA_Mod4k
 Info (12127): Elaborating entity "FPGA_Mod4k" for the top level hierarchy
+Warning (12125): Using design file fpga_mod4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FPGA_Mod4
+Info (12128): Elaborating entity "FPGA_Mod4" for hierarchy "FPGA_Mod4:inst1"
+Warning (275043): Pin "Mod4k" is missing source
+Info (12128): Elaborating entity "7490" for hierarchy "FPGA_Mod4:inst1|7490:inst2"
+Info (12130): Elaborated megafunction instantiation "FPGA_Mod4:inst1|7490:inst2"
 Warning (12125): Using design file fpga_mod1k.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: FPGA_Mod1k
-Info (12128): Elaborating entity "FPGA_Mod1k" for hierarchy "FPGA_Mod1k:inst3"
-Info (12128): Elaborating entity "7490" for hierarchy "FPGA_Mod1k:inst3|7490:inst4"
-Info (12130): Elaborated megafunction instantiation "FPGA_Mod1k:inst3|7490:inst4"
+Info (12128): Elaborating entity "FPGA_Mod1k" for hierarchy "FPGA_Mod1k:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 48 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Tue Nov 17 17:11:58 2026
-    Info: Elapsed time: 00:00:02
+    Info (21061): Implemented 17 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4634 megabytes
+    Info: Processing ended: Tue Nov 17 17:56:16 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

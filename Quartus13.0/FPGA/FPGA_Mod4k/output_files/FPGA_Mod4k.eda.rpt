@@ -1,5 +1,5 @@
 EDA Netlist Writer report for FPGA_Mod4k
-Tue Nov 17 17:13:02 2026
+Tue Nov 17 17:57:18 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 17 17:13:02 2026 ;
+; EDA Netlist Writer Status ; Successful - Tue Nov 17 17:57:18 2026 ;
 ; Revision Name             ; FPGA_Mod4k                            ;
 ; Top-level Entity Name     ; FPGA_Mod4k                            ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 17 17:13:02 2026
+    Info: Processing started: Tue Nov 17 17:57:18 2026
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog FPGA_Mod4k -c FPGA_Mod4k
 Info (204019): Generated file FPGA_Mod4k.vo in folder "D:/GitHub/quartus/Quartus13.0/FPGA/FPGA_Mod4k/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Tue Nov 17 17:13:02 2026
+    Info: Processing ended: Tue Nov 17 17:57:18 2026
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

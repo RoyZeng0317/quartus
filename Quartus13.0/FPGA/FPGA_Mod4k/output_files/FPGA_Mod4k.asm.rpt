@@ -1,5 +1,5 @@
 Assembler report for FPGA_Mod4k
-Tue Nov 17 17:12:07 2026
+Tue Nov 17 17:56:21 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Nov 17 17:12:07 2026 ;
+; Assembler Status      ; Successful - Tue Nov 17 17:56:21 2026 ;
 ; Revision Name         ; FPGA_Mod4k                            ;
 ; Top-level Entity Name ; FPGA_Mod4k                            ;
 ; Family                ; Cyclone IV GX                         ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                            ;
 +----------------+------------------------------------------------------------------------------------+
 ; Device         ; EP4CGX15BF14C6                                                                     ;
-; JTAG usercode  ; 0x000C3AA1                                                                         ;
-; Checksum       ; 0x000C3AA1                                                                         ;
+; JTAG usercode  ; 0x000BDDC3                                                                         ;
+; Checksum       ; 0x000BDDC3                                                                         ;
 +----------------+------------------------------------------------------------------------------------+
 
 
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 17 17:12:06 2026
+    Info: Processing started: Tue Nov 17 17:56:20 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off FPGA_Mod4k -c FPGA_Mod4k
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4615 megabytes
-    Info: Processing ended: Tue Nov 17 17:12:07 2026
+    Info: Peak virtual memory: 4611 megabytes
+    Info: Processing ended: Tue Nov 17 17:56:21 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

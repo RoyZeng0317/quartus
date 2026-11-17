@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dD:\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod4k\simulation\qsim
 vFPGA_Mod4k
-Z1 I>NnoIFne;:F2=N?kZjWo32
+Z1 IOk545hZ23oP:Mm6DQJho:3
 Z2 VeQmCWk67IW<lhFmi8hWi[0
 Z3 dD:\GitHub\quartus\Quartus13.0\FPGA\FPGA_Mod4k\simulation\qsim
-Z4 w1794906782
+Z4 w1794909438
 Z5 8FPGA_Mod4k.vo
 Z6 FFPGA_Mod4k.vo
 L0 31
@@ -18,68 +18,68 @@ Z8 !s90 -work|work|FPGA_Mod4k.vo|
 Z9 o-work work -O0
 Z10 n@f@p@g@a_@mod4k
 !i10b 1
-Z11 !s100 =Q=GlMAV7>`8]6VNKNJo72
+Z11 !s100 =F:iR8iM0oKaoI<89FXVV2
 !s85 0
-Z12 !s108 1794906784.012000
+Z12 !s108 1794909439.337000
 Z13 !s107 FPGA_Mod4k.vo|
 !s101 -O0
 vFPGA_Mod4k_vlg_check_tst
 !i10b 1
-!s100 >Yjn0]_=;IX>X^OFHnEO33
-I:UGQ>BCMEJiKMdGW7]U;n2
-VhEUoFN3UZcnDa:;4?2@8R3
+Z14 !s100 >Yjn0]_=;IX>X^OFHnEO33
+Z15 I:UGQ>BCMEJiKMdGW7]U;n2
+Z16 VhEUoFN3UZcnDa:;4?2@8R3
 R3
 R4
-Z14 8FPGA_Mod4k.vt
-Z15 FFPGA_Mod4k.vt
+Z17 8FPGA_Mod4k.vt
+Z18 FFPGA_Mod4k.vt
 L0 57
 R7
 r1
 !s85 0
 31
-Z16 !s108 1794906784.118000
-Z17 !s107 FPGA_Mod4k.vt|
-Z18 !s90 -work|work|FPGA_Mod4k.vt|
+Z19 !s108 1794909439.449000
+Z20 !s107 FPGA_Mod4k.vt|
+Z21 !s90 -work|work|FPGA_Mod4k.vt|
 !s101 -O0
 R9
-n@f@p@g@a_@mod4k_vlg_check_tst
+Z22 n@f@p@g@a_@mod4k_vlg_check_tst
 vFPGA_Mod4k_vlg_sample_tst
 !i10b 1
-Z19 !s100 z6ko`F7=@N0[h2?j>1J0h2
-Z20 IBFTJFC89]5LmRCVoQ2zBn0
-Z21 V`F_JZ3nflLOfm;ZjgUl4l2
+Z23 !s100 z6ko`F7=@N0[h2?j>1J0h2
+Z24 IBFTJFC89]5LmRCVoQ2zBn0
+Z25 V`F_JZ3nflLOfm;ZjgUl4l2
 R3
 R4
-R14
-R15
+R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R19
+R20
+R21
 !s101 -O0
 R9
-Z22 n@f@p@g@a_@mod4k_vlg_sample_tst
+Z26 n@f@p@g@a_@mod4k_vlg_sample_tst
 vFPGA_Mod4k_vlg_vec_tst
 !i10b 1
-!s100 @KX^jg5M;CGkPd41WYQzB3
-IF@4U8^TcEEi=?U5Mdb<m51
-VIRMbPF1fg2<e=EObYM=BN3
+Z27 !s100 @KX^jg5M;CGkPd41WYQzB3
+Z28 IF@4U8^TcEEi=?U5Mdb<m51
+Z29 VIRMbPF1fg2<e=EObYM=BN3
 R3
 R4
-R14
-R15
-L0 152
+R17
+R18
+Z30 L0 152
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R19
+R20
+R21
 !s101 -O0
 R9
-n@f@p@g@a_@mod4k_vlg_vec_tst
+Z31 n@f@p@g@a_@mod4k_vlg_vec_tst
